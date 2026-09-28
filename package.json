@@ -1,0 +1,32 @@
+{
+  "name": "docker-qa-e2e",
+  "version": "1.0.0",
+  "description": "Professional Docker image for QA automation with Playwright, TypeScript, E2E and API tests",
+  "private": true,
+  "author": {
+  "name": "H-530",
+  "url": "https://github.com/H-530"
+  },
+  "homepage": "https://github.com/H-530/docker-qa-e2e",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/H-530/docker-qa-e2e.git"
+  },
+  "bugs": {
+    "url": "https://github.com/H-530/docker-qa-e2e/issues"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:e2e": "playwright test tests/e2e",
+    "test:api": "playwright test tests/api",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0",
+    "dotenv": "^16.4.0"
+  }
+}
